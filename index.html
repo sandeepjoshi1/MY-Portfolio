@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <!-- <script src="Portfolio.js"></script> -->
+    <link rel="stylesheet" href="Portfolio.css" />
+    <script
+      src="https://kit.fontawesome.com/7390b6bb85.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="Portfolio.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <!-- <img src="image/logo.png" class="logo"> -->
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#services">Service</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX designer</p>
+          <h1>Hi, I'm <span>Sandeep Joshi</span><br />From Uttrakhand,India</h1>
+        </div>
+      </div>
+    </div>
+    <!-- ------------About--------- -->
+    <div id="About">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-2">
+            <h1 class="sub-Title">About Me</h1>
+            <p>
+              Hi, am Sandeep Joshi, a dedicated Full Stack Developer and a
+              Master of Computer Application (MCA) student at Govind Ballabh
+              Pant Institute of Engineering & Technology, Ghurdauri. With a
+              strong foundation in both web development and a background in
+              commerce, I bring a unique perspective to the world of technology.
+            </p>
+            <div class="Tab-Titles">
+              <p class="Tab-Links Active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="Tab-Links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="Tab-Links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="Tab-Contents Active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />HTML, CSS, Bootstrap, Tailwind.</li>
+                <li>
+                  <span>WEB DEVELOPMENT</span><br />Backend: React.js, Node.js,
+                  Java.<br />
+                  Database: MongoDB, MySQL
+                </li>
+                <li>
+                  <span>LEADERSHIP & TEAM MANAGEMENT</span><br />I possess a
+                  natural inclination to inspire and guide teams, fostering an
+                  environment where individuals collectively strive for
+                  excellence.With a keen eye for talent and a knack for
+                  collaboration, I excel in optimizing team dynamics to achieve
+                  shared goals efficiently and harmoniously.
+                </li>
+              </ul>
+            </div>
+            <div class="Tab-Contents" id="experience">
+              <ul>
+                <li><span>2023-Current</span><br />Full stack developer</li>
+                <li>
+                  <span>2021-2022</span><br />Data Resurch Analist / MIS
+                  executive in Realstate
+                </li>
+                <li><span>2020-2021</span><br />Sales Executive of RBL Bank</li>
+              </ul>
+            </div>
+            <div class="Tab-Contents" id="education">
+              <ul>
+                <li>
+                  <span>2023-2024</span><br />Master in Computer Applications<br />{
+                  G. B. Pant Institute of Engineering and Technology, Ghurdauri,
+                  Uttarakhand }
+                </li>
+                <li>
+                  <span>2015-2018</span><br />Bachelor of Commerce<br />{
+                  M.B.P.G. College, Haldwani, Nainita }
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="about-col-1">
+            <img src="user.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------------services-------------------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-Title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I specialize in crafting visually captivating and user-friendly
+              websites. My mission is to transform your ideas into stunning
+              online realities. From sleek design to seamless navigation, I
+              create websites that engage, inform, and leave a lasting
+              impression. Let me enhance your online presence and make your
+              brand stand out in the digital world.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I specialize in UI/UX design, where artistry meets functionality.
+              My goal is to create intuitive and visually appealing user
+              interfaces that provide seamless user experiences. With a keen eye
+              for detail and a user-centric approach, I transform ideas into
+              interactive designs that engage and delight your audience.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I excel in crafting compelling app designs that blend aesthetics
+              with functionality. With a focus on user experience, I create
+              intuitive, eye-catching interfaces for mobile and web
+              applications. Elevate your app's appeal and usability with my
+              design expertise.
+            </p>
+            <a href="#">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------------------------projects--------------------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-Title">My Projects</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="work-1.png" />
+            <div class="layer">
+              <h3>Social Media app</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+                veniam numquam explicabo quos, quibusdam quis ab minima unde
+                soluta incidunt et id recusandae optio molestiae sint atque
+                expedita! Eum, quibusdam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-2.png" />
+            <div class="layer">
+              <h3>Music app</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+                veniam numquam explicabo quos, quibusdam quis ab minima unde
+                soluta incidunt et id recusandae optio molestiae sint atque
+                expedita! Eum, quibusdam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping app</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+                veniam numquam explicabo quos, quibusdam quis ab minima unde
+                soluta incidunt et id recusandae optio molestiae sint atque
+                expedita! Eum, quibusdam!
+              </p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-------------------conatct------------------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="container-left">
+            <h1 class="sub-Title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i
+              >Sjofficial12223@hmail.com.com
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-phone-volume"></i>(+91)-7456857123
+            </p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/" target="_blank"
+                ><i class="fa-brands fa-instagram" style="color: #fff"></i
+              ></a>
+              <a href="https://wa.me/7456857123" target="_blank"
+                ><i class="fa-brands fa-whatsapp" style="color: #fff"></i
+              ></a>
+              <a href="https://twitter.com/Sandeep30430436" target="_blank"
+                ><i class="fa-brands fa-twitter" style="color: #fff"></i
+              ></a>
+              <a href="https://github.com/sandeepjoshi1" target="_blank"
+                ><i class="fa-brands fa-github" style="color: #fff"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sjofficial12223/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in" style="color: #fff"></i
+              ></a>
+            </div>
+            <a href="My cv.pdf" download class="btn btn2" target="_blank"
+              >Download CV</a
+            >
+          </div>
+
+          <div class="container-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="10"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2 btn3">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright © [Sandeep Joshi] Created by Love
+          <i class="fa-solid fa-heart-pulse"></i> For Web Development. All
+          rights reserved.
+        </p>
+      </div>
+    </div>
+    <!-- ----------script------------------------ -->
+    <script>
+      var TabLinks = document.getElementsByClassName("Tab-Links");
+      var TabContents = document.getElementsByClassName("Tab-Contents");
+
+      function opentab(tabName) {
+        for (Tablink of TabLinks) {
+          Tablink.classList.remove("Active-link");
+        }
+        for (TabContent of TabContents) {
+          TabContent.classList.remove("Active-tab");
+        }
+        event.currentTarget.classList.add("Active-link");
+        document.getElementById(tabName).classList.add("Active-tab");
+      }
+    </script>
+    <script>
+      var sideMenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sideMenu.style.right = "0";
+      }
+      function closemenu() {
+        sideMenu.style.right = "-200px";
+      }
+    </script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxqGfzAuILcQztzJFVnN7AK8t5Vmb3bhpxxSk7hv-GdktPwu-ICVkTOqXpu7a0axwn2/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
